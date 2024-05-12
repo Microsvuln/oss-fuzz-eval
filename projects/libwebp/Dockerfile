@@ -16,7 +16,7 @@
 
 FROM gcr.io/oss-fuzz-base/base-builder
 RUN apt-get update && apt-get install -y autoconf make libtool zip
-RUN git clone https://chromium.googlesource.com/webm/libwebp
+RUN git clone https://github.com/Microsvuln/libwebp-eval
 RUN git clone https://chromium.googlesource.com/webm/libwebp-test-data
 ADD https://storage.googleapis.com/downloads.webmproject.org/webp/testdata/fuzzer/fuzz_seed_corpus.zip $SRC/
 RUN unzip fuzz_seed_corpus.zip -d libwebp-test-data/
