@@ -52,6 +52,8 @@ webp_cxx_fuzzers=(
   animdecoder_fuzzer
   animencoder_fuzzer
   enc_dec_fuzzer
+  webpdecode_fuzzer1
+  webpdecode_fuzzer2
 )
 
 for fuzzer in "${webp_c_fuzzers[@]}"; do
